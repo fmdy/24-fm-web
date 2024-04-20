@@ -69,13 +69,58 @@
                        <th> 2022 </th>
                      </tr>
                      </thead>
-                       <tbody> </tbody>
+                       <tbody> 
+                         <tr>
+                       <td> 자동차 </td>
+                       <td>  1000</td>
+                        <td> 1200</td>
+                         <td> 1300 </td>
+                         </tr>
+                         <tr>
+                            <td> 모니터 </td>
+                            <td>  1234</td>
+                             <td rowspan="2"> 4567</td>
+                              <td> 8910 </td>
+                              </tr>
+                         <td> 에어컨 </td>
+                         <td>  300 </td>
+                          <td> 3019</td>
+                           <td> 752 </td>
+                     </tr>
+                         </tbody>
                          <tfoot>
+                           <tr>
+                             <td colspan="3">합계</td>  
+                             <td>4000</td> 
+                           </tr>
                          </tfoot>          
                      </table>  
                      
                    </section>
-                   
+                   <!-- form interation -->
+                   <section>
+                     <form action="/signup" method="post">
+                       <p>유저네임</p>
+                       <input list="names" name="username" type="text" maxlength="10" size="10">
+                       
+                       <datalist id="names">
+                         <option value="johndoe"> </option>
+                         <option value="jandoe"> </option>
+                         <option value="seodomah"> </option>
+                       </datalist>
+                       <label for="u-email">Email</label>
+                       <input id="u-email" name="Email" type="email">
+                       <label for="u-pw"> password</label>
+                       <input id="u-pw" name="password" type="password">
+                
+                       <label for=u-birth">birthday</label>
+                       <input id=u-birth" name="birthday" type="date">
+                       <input type="submit">
+                       <button type="reset">초기화</button>
+                       
+                     </form>
+                     
+                   </section>
                    </main>
                  <aside> 
                  <h3>가장 많이본 뉴스</h3>
